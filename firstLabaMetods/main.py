@@ -30,26 +30,7 @@ class mywindow(QtWidgets.QMainWindow):
             self.max_ = 'max'
             self.min_ = 'min'
 
-            # self.query.exec("""SELECT seller.`id`,seller.`price_rub` from seller ORDER BY seller.`price_rub` ASC""")
-
-            # Шаблон для максимальный-лучший рейтинга
-            # self.max_price = self.maxmin(max_,'seller.`price_rub`')
-            # print(self.max_price)
-            # self.price_rating_per_one = self.max_price / 100 * float(self.ui.priceSpinBox.text().replace(',', '.'))
-            # print(self.price_rating_per_one)
-            # self.query.exec("""SELECT seller.`id`,seller.`price_rub` from seller """)
-            # while self.query.next():
-            #     print(self.query.value(0), round(int(self.query.value(1)) / self.price_rating_per_one,2))
-
-            # Шаблон для минимальный-лучший рейтинга
-            # self.min_price = self.maxmin(min_,'seller.`price_rub`')
-            # print(self.min_price)
-            # self.price_rating_per_one = self.min_price*float(self.ui.priceSpinBox.text().replace(',','.'))
-            # print(self.price_rating_per_one)
-            # self.query.exec("""SELECT seller.`id`,seller.`price_rub` from seller """)
-            # while self.query.next():
-            #     print(self.query.value(0),round(self.price_rating_per_one/int(self.query.value(1))*100, 2))
-
+            
             self.criterion_dict = {}
             self.final_rating = {}
 
